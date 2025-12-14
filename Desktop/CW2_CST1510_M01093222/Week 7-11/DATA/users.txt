@@ -1,0 +1,14 @@
+users_content = """username,password_hash,role
+admin,$2b$12$LQv3c1yqB3YYrJfZ8wB8eOJZgR9nY8VW8cJkZ5qY3rV9kM2pY5W6,admin
+analyst,$2b$12$LQv3c1yqB3YYrJfZ8wB8eOJZgR9nY8VW8cJkZ5qY3rV9kM2pY5W6,analyst
+user,$2b$12$LQv3c1yqB3YYrJfZ8wB8eOJZgR9nY8VW8cJkZ5qY3rV9kM2pY5W6,user
+"""
+
+with open(DATA_DIR / 'users.txt', 'w') as f:
+    f.write(users_content)
+
+print("✅ All data files created in DATA/ directory:")
+print("   - cyber_incidents.csv")
+print("   - datasets_metadata.csv") 
+print("   - it_tickets.csv")
+print("   - users.txt")
